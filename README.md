@@ -25,3 +25,10 @@ git clone git@github.com:gokoans/golangdocker.git .
 ```
 ./pack.sh && docker run -it golangdocker
 ```
+
+## Important Note
+
+```
+Note that we should use `tianon/true` instead of `scratch` as the base image if we are deploying on AWS.
+AWS will not accept the `scratch` base image as it is reserved.
+```
